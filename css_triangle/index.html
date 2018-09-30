@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三角形demo</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        div {
+            margin: 50px;
+        }
+
+        .triangle1 {
+            display: inline-block;
+            position: relative;
+            width: 300px;
+            height: 150px;
+            border-radius: 20px;
+            background-color: #469af5;
+            color: #fff;
+            text-align: center;
+            line-height: 150px;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+        }
+
+        .triangle1::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            bottom: -30px;
+            right: 40px;
+            border-width: 30px 30px 0 0;
+            border-color: #469af5 transparent transparent transparent;
+            border-style: solid;
+        }
+
+        .triangle2 {
+            display: inline-block;
+            background-color: blanchedalmond;
+            margin: 50px;
+            box-sizing: border-box;
+            width: 160px;
+            height: 160px;
+            border-width: 40px 40px 40px 40px;
+            border-color: #469af5#FFA07A#90EE90#7B68EE;
+            border-style: solid;
+        }
+
+        .triangle3 {
+            display: inline-block;
+            margin: 50px;
+            box-sizing: border-box;
+            width: 0;
+            height: 0;
+            border-width: 80px 80px 80px 80px;
+            border-color: #469af5#FFA07A#90EE90#7B68EE;
+            border-style: solid;
+        }
+
+        .triangle4 {
+            display: inline-block;
+            margin: 50px;
+            box-sizing: border-box;
+            width: 0;
+            height: 0;
+            border-width: 80px 80px 80px 80px;
+            border-color: transparent transparent #90EE90 transparent;
+            border-style: solid;
+        }
+
+        .triangle-up {
+            display: inline-block;
+            margin: 50px;
+            position: relative;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #469af5;
+            line-height: 100px;
+            color: #fff;
+        }
+
+        .triangle-down {
+            display: inline-block;
+            margin: 50px;
+            position: relative;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 100px solid #469af5;
+            line-height: 100px;
+            color: #fff;
+        }
+
+        .triangle-down::before {
+            position: absolute;
+            content: "Down";
+            font-size: 16px;
+            top: -120px;
+            left: -20px;
+            color: #fff;
+        }
+
+        .triangle-right {
+            display: inline-block;
+            margin: 50px;
+            position: relative;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-left: 100px solid #469af5;
+            border-bottom: 50px solid transparent;
+            line-height: 100px;
+            color: #fff;
+        }
+
+        .triangle-right::before {
+            position: absolute;
+            content: "Right";
+            font-size: 16px;
+            top: -50px;
+            left: -80px;
+            color: #fff;
+        }
+
+        .triangle-left {
+            display: inline-block;
+            margin: 50px;
+            position: relative;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-right: 100px solid #469af5;
+            border-bottom: 50px solid transparent;
+            line-height: 100px;
+            color: #fff;
+        }
+
+        .triangle-left::before {
+            position: absolute;
+            content: "Left";
+            font-size: 16px;
+            top: -50px;
+            right: -80px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="triangle1">James is a handsome boy.</div>
+    <div class="triangle2"></div>
+    <div class="triangle3"></div>
+    <div class="triangle4"></div>
+    <div class="triangle-up">Up</div>
+    <div class="triangle-down"></div>
+    <div class="triangle-left"></div>
+    <div class="triangle-right"></div>
+</body>
+
+</html>
